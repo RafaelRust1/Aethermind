@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: theme('colors.indigo.600');
+  --secondary-color: theme('colors.purple.500');
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.dark .react-flow__node {
+  @apply bg-gray-800 border-gray-700 text-white;
+}
+
+.dark .react-flow__handle {
+  @apply bg-gray-600;
+}
+
+.dark .react-flow__handle:hover {
+  @apply bg-gray-400;
+}
+.bg-image {
+  background-size:  cover;
+  background-repeat: no-repeat;
+ 
+}
+
+.dark .bg-image {
+  background-image: url('https://i.postimg.cc/g2WzSDjg/dark-bg-2.png');
+}
+
+.light .bg-image {
+  background-image: url('https://i.postimg.cc/KzFLBPr3/light-bg.png');
+}
+
+.dark .react-flow__edge-path {
+  @apply stroke-gray-400;
+}
+
+.dark .react-flow__edge:hover .react-flow__edge-path {
+  @apply stroke-gray-200;
+}
+
+.dark .react-flow__controls button {
+  @apply bg-gray-800 border-gray-700 text-gray-300;
+}
+
+.dark .react-flow__controls button:hover {
+  @apply bg-gray-700;
+}
+
+.dark .react-flow__attribution {
+  @apply bg-gray-800 text-gray-300;
+}
